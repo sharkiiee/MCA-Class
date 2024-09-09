@@ -11,8 +11,14 @@
             padding: 0;
         }
 
+        a{
+            text-decoration: none;
+        }
+
         button{
-            padding: 5px 10px;
+            height: 30px;
+            padding: 0px 12px;
+            border: 2px solid white;
         }
 
         section{
@@ -25,10 +31,33 @@
 
         .purchase-icon img{
             height: 100px;
+            margin-left: 50px;
+        }
+
+        .lower-files{
+            display: flex;
+            margin-top: 30px;
         }
 
         .lower-files img{
-            height: 100px;
+            height: 15px;
+        }
+
+        .overview{
+            margin-top: 50px;
+        }
+
+        .overview img{
+            height: 20px;
+        }
+
+        .star{
+            display: flex;
+            margin-top: 40px;
+        }
+
+        .star img{
+            height: 30px;
         }
     </style>
 </head>
@@ -44,34 +73,42 @@
         </div>
 
         <div style="padding: 50px; ">
-            <div>
+            <div style="text-align: center;">
                 <h2 style="font-size: 33px;">Atomic Habits</h2>
-                <p style="font-size: 20px;">“A supremely practical and useful book. James Clear distills the most fundamental information about habit formation, so you can accomplish more by focusing on less.”</p>
-                <span style="font-size: 17px;">Mark Manson</span>
+                <p style="font-size: 20px; margin-top: 10px;">“A supremely practical and useful book. James Clear distills the most fundamental information about habit formation, so you can accomplish more by focusing on less.”</p>
+                <span style="display: inline-block; font-size: 17px; font-weight: 600;margin-top: 10px">Mark Manson</span><br>
                 <span style="font-size: 13px;">#1 New York Times best-selling author</span>
-                <div>
-                    <button>Buy Now</button>
-                    <div class="purchase-icon">
+                <div style="display: flex;place-items: center; justify-content: s;" class="overview">
+                    <button><a href="https://bookscape.com/product-details/atomic-habits-9781847941831?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=3070623782&hsa_cam=21312679587&hsa_grp=171558028988&hsa_ad=703165650710&hsa_src=g&hsa_tgt=pla-302248272198&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjwufq2BhAmEiwAnZqw8rKy9oLC1JPoCb8qkCxbK6dqPpw7_XTGRzrQmfeLImPJzwooVAkCVxoCPQcQAvD_BwE">Buy Now</a></button>
+                    <div class="purchase-icon" style="display: flex;">
                         <img src="./images/play-button-svgrepo-com.svg" alt="">
+                        <span style="display: inline-block; margin-left: 3px;">
+                            Overview
+                        </span>
                     </div>
-                    <span>
-                        Overview
-                    </span>
                 </div>
                 <div class="lower-files">
                     <div>
                         <img src="./images/gift-196.svg" alt="">
                         <span>GIFT</span>
                     </div>
-                    <div>
+                    <div style="margin-left: 40px;">
                         <img src="./images/person-feedback-svgrepo-com.svg" alt="">
                         <span>FEEDBACK</span>
                     </div>
-                    <div>
+                    <div style="margin-left: 40px;">
                         <img src="./images/save.svg" alt="">
                         <span>SAVE YOUR BOOKS</span>
                     </div>
                 </div>
+            </div>
+
+            <div class="star">
+                <img src="./images/yellow-star-rating-15605.svg" alt="">
+                <img src="./images/yellow-star-rating-15605.svg" alt="">
+                <img src="./images/yellow-star-rating-15605.svg" alt="">
+                <img src="./images/yellow-star-rating-15605.svg" alt="">
+                <img src="./images/yellow-star-rating-15605.svg" alt="">
             </div>
 
         </div>
