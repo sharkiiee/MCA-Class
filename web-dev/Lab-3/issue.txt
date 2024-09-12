@@ -1,0 +1,1 @@
+- In second file border is not same, check and rectify it.
