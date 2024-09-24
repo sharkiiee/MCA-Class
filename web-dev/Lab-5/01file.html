@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="goToRight()">Right button</button>
+    <button onclick="goToLeft()">Left button</button>
+
+    <script>
+        function goToRight(){
+            alert("this is the alert of right",)
+        }
+
+        function goToLeft(){
+            return confirm("are you sure you want to confirm this")
+        }
+
+        document.addEventListener("click", function() {
+    // Opens a new webpage on every click
+    window.open("https://youtube.com", "_blank");
+});
+    </script>
+</body>
+</html>
