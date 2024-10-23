@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My file notebook</title>
+    <title>Query Selector</title>
 </head>
 <body>
-    
+    <!-- Taking first element as the query selector -->
+    <!-- Write a program that changes the background of the div evverytime we click on button -->
+    <div>
+        <h1>This is my header</h1>
+        <p>This is my Paragraph</p>
+    </div>
+    <button onclick="divHandler()">Click to change bg</button>
+    <script>
+            function divHandler(){
+                let divBg = document.querySelector("div");
+                divBg.style.backgroundColor = "blue";
+            }
+    </script>
 </body>
 </html>

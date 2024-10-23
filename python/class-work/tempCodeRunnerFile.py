@@ -8,7 +8,6 @@ l3 = ["Hello ",4.6,45]
 l1.extend(l3)
 print(l1)
 
-
 l2.append(l3)
 print(l2)
 print(l2[4])

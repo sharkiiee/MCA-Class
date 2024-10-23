@@ -1,0 +1,33 @@
+<!-- Write a program in DOM that increases the value of count and decreases the value of count everytime we click on increase button or decrease button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Button</title>
+</head>
+<body>
+    <button onclick="increaseHandler()">Increase</button>
+    <button onclick="decreaseHandler()">Decrease</button>
+    <div id="showCounter"></div>
+    <script>
+        let count = 1;
+        function increaseHandler()
+        {
+            count = count + 1;
+            renderingCount();
+        }
+        function decreaseHandler(){
+            count = count - 1;
+            renderingCount();
+        }
+
+        function renderingCount(){
+            document.getElementById("showCounter").innerHTML = `Counter : ${count}`
+        }
+
+        renderingCount();
+    </script>
+</body>
+</html>

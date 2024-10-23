@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Name</title>
+</head>
+<body>
+    <div>
+        <!-- Selecting nested elements -->
+         <ul class="list">
+            <li class="item">item 1</li>
+            <li class="item">item 2</li>
+            <li class="item">item 3</li>
+         </ul>
+    </div>
+    <script>
+        const firstListItem = document.querySelector('.list .item');
+        console.log(firstListItem.textContent);
+
+        const allListItems = document.querySelectorAll('.list .item');
+        allListItems.forEach(el =>  console.log(el.textContent));
+    </script>
+</body>
+</html> 

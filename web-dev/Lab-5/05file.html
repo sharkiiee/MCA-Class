@@ -1,0 +1,27 @@
+
+<!--Everytime user click on the button change the content of the header and the paragraph  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">This is table</h1>
+    <p id="paragraph">this is something</p>
+    <button id="buttonHandler">click to change the content</button>
+    <script>
+        const header = document.getElementById("header");
+        const paragraph = document.getElementById("paragraph")
+        let button = document.getElementById("buttonHandler")
+
+        button.addEventListener("click",function(){
+            header.innerHTML= "changing the header"
+            paragraph.innerHTML= "changing the paragraph value"
+            paragraph.style.color = "purple"
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- selecting using the attribute -->
+    <a href="" target="_blank">website</a>
+    <button onclick="divHandler()">
+        click
+    </button>
+    <script>
+         function divHandler(){
+            let divBg = document.querySelector("a[target]");
+            divBg.innerHTML = "Now this is more something else ::::!!!!"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!-- Make a program to add  background -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+<body>
+    <p id="first">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam id aliquid dolorum dolores dolorem reiciendis neque repellendus ea reprehenderit? Expedita quaerat nihil, asperiores ipsam amet tenetur voluptatibus omnis totam dolor, modi eos?</p>
+    <button onclick="pHandler()">click to add background</button>
+    <script>
+        function pHandler(){
+            console.log("i am in")
+            let pChanger = document.getElementById("first");
+            pChanger.style.backgroundImage = "url('https://i.pinimg.com/control/564x/1e/11/9b/1e119b0de1b5ea18553c528e3ddb92b2.jpg')"
+        }
+    </script>
+</body>
+</html>
