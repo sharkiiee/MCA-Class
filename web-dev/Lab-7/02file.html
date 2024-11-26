@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add event listener</title>
+</head>
+<body>
+    <h1>Javascript event listener</h1>
+    <button id="myButton">Click Me</button>
+    <script>
+        function handleClick(){
+            alert('Button is clicked');
+        }
+        document.addEventListener('domLoader',function(){
+            const button = document.getElementById('myButton');
+            button.addEventListener('click',handleClick);
+        });
+    </script>
+</body>
+</html>

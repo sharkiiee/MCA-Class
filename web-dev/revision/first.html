@@ -1,0 +1,37 @@
+<!-- Write a program of increasing counter everytime we click on the button -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <button onclick="increaseHandler()">Increase Value</button>
+    <button onclick="decreaseHandler()">Decrease Value</button>
+    <div id="showCounter"></div>
+    <div id="show1Counter"></div>
+    <script>
+        let count = 0;  
+        let secondCount = 0;
+        function increaseHandler(){
+            count = count + 1;
+            reRender();
+        }
+        function reRender(){
+            document.getElementById("showCounter").innerHTML = `Counter ${count}`
+        }
+        function decreaseHandler(){
+            secondCount = secondCount -1;
+            secondRendering();
+        }
+
+            function secondRendering(){
+            document.getElementById("show1Counter").innerHTML = `Counter ${secondCount}`
+        }
+        reRender()
+        secondRendering();
+    </script>
+</body>
+</html>
