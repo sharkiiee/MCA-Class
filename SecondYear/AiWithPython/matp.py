@@ -5,7 +5,7 @@ y=[5,10,15,20,25]
 x1=[3,6,9,12,15]
 y1=[2,4,6,8,10]
 plt.plot(x,y1,marker="p")
-plt.plot(x,y,marker=".")
+plt.plot(x,y,marker="." , color="red" ,label="points", linestyle="--" markersize=10)
 plt.plot(x1,y1,marker=".")
 plt.xlabel("x-axis")
 plt.ylabel("y-axis")
