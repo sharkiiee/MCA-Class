@@ -16,6 +16,6 @@ public class A02file {
                 largest = arr[i];
             }
         }
-        System.out.printf("The largest value is : %d",large);
+        System.out.printf("The largest value is : %d",largest);
     }
 }
