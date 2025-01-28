@@ -1,22 +1,22 @@
 // Find the length of the string without using any predefined function like len.
 
+// Note :- You can't use null value to check whether string is ending or not because in java string is an class and length is stored internally.
 class FindlenString{
     public static void main(String[] args) {
-        String str = "Sarthak Agrawal"; // Example string
+        String str = "Sarthak Agrawal";
         int length = 0;
 
         while (true) {
             try {
-                // Try to access the character at the current index
+                
                 str.charAt(length);
-                length++; // Increment length if a character is found
+                length++; 
             } catch (StringIndexOutOfBoundsException e) {
-                // Break the loop when we reach the end of the string
                 break;
             }
         }
 
-        System.out.println("Length of the string: " + length); // Output the length
+        System.out.println("Length of the string: " + length); 
     }
 }
 
